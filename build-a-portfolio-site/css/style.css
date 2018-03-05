@@ -1,0 +1,174 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+body, html {
+    height: 100%;
+}
+header {
+	margin-top: 15px;
+}
+footer a,
+footer a:hover,
+footer a:focus {
+	color: #fafafa;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #00b2ca;
+	text-decoration: none;
+}
+footer {
+    background: #212121;
+    padding: 25px 0 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
+    color: #fafafa;
+    margin-top: 30px;
+    font-size: 18px;
+}
+li:hover {
+	background-color: #e7e7e7;
+}
+picture img {
+	width: 100%;
+}
+.logo {
+	max-height: 100px;
+}
+.banner-font {
+	font-weight: 100;
+}
+.featured-font {
+	font-weight: 400;
+}
+.navbar-default {
+	border-color:white;
+	background-color:white;
+}
+.social-link {
+	padding: 0 10px 0 0;
+	color:#fafafa;
+}
+
+/**** Back to top button ****/
+/* Copyright for the back-to-top button goes to http://codyhouse.co/gem/back-to-top/ */
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: #006064 url(../images_src/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.cd-top.cd-fade-out {
+    opacity: 0.5;
+}
+
+.no-touch .cd-top:hover {
+    background-color: #006064;
+    opacity: 1;
+}
+.parallax [class*="bg__"] {
+	position: relative;
+	height: 50vh;
+	background-attachment: fixed;
+	background-position: top center;
+	background-size: cover;
+}
+/* parallax images css */
+.parallax .bg__foo {
+	height: 100vh;
+	background-image: url(../images_src/graham-holtshausen.jpg);
+}
+.parallax .bg__polar {
+	height: 100vh;
+	background-image: url(../images_src/jonatan-pie.jpg);
+}
+.parallax .bg__newyork {
+	height: 100vh;
+	background-image: url(../images_src/nicolai-berntsen.jpg);
+}
+.parallax-thumbnail {
+    position: relative;
+}
+
+.caption {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+}
+.white {
+	color:white;
+}
+
+
+.thumbnail:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+.content-wrapper {
+	padding: 2em 0 3em;
+	background-color: white;
+	z-index: 2;
+	line-height: 1.6;
+	font-size: 1.7em;
+	font-weight: 400;
+	color: #4b5f6e;
+	font-family: 'Roboto', sans-serif;
+}
+.breadcrumb {
+	background-color: white;
+	font-size: 1.5em;
+	margin-top: 15px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
