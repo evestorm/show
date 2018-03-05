@@ -198,8 +198,12 @@ window.addEventListener('resize', function(e){
  */
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('sw.js', {scope: '/'})
-    .then(function(){
+  navigator.serviceWorker
+    .register(
+      "https://evestorm.github.io/show/assn-restaurant-stage-1/sw.js",
+      { scope: "/" }
+    )
+    .then(function() {
       // ...
-    })
+    });
 }
