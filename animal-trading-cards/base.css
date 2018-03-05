@@ -1,0 +1,93 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    list-style: none;
+}
+
+body {
+    background: url(http://www.moviedeskback.com/wp-content/uploads/2016/03/Zootropolis-HD-wallpapers-2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 30px black;
+    background-color: white;
+}
+
+header {
+    position: relative;
+}
+
+.bg {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+#bg {
+    width: 300px;
+    height: 220px;
+}
+
+.fg {
+    position: absolute;
+    top: -30px;
+    width: 300px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#fg {
+    width: 150px;
+}
+
+main {
+    padding: 20px 10px;
+    color: #888;
+}
+
+.intro {
+    text-align: justify;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #75befc;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    color: white;
+}
+
+ul {
+    /*display: block;*/
+    padding: 0;
+}
+
+ul li {
+    /*display: inline-block;*/
+    width: 32%;
+    float: left;
+    border-right: 2px solid #5bb3fc;
+}
+
+ul li.last {
+    border-right: none;
+}
+
+ul li h2 {
+    font-size: 2em;
+}
+
+ul li h4 {
+    font-weight: normal;
+}
