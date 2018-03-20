@@ -1,0 +1,187 @@
+
+@font-face {
+    font-family: FFMarkRegular;
+    src: url('../fonts/FF-Mark-Pro-Book.otf')
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: FFMarkRegular, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    background-color: lightblue;
+    border-bottom: 1px solid #000;
+    min-height: 7vh;
+}
+
+.main-header h1 {
+    width: 600px;
+
+    padding: 15px;
+    font-size: 18px;
+}
+
+.content-wrapper {
+    display: flex;
+    min-height: 93vh;
+}
+
+.controls-wrapper {
+    padding:15px;
+    min-height: 100%;
+    width: 350px;
+    background-color: lightblue;
+    border-right: 1px solid #000;
+}
+
+.grid-controls,
+.paint-controls {
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 10px;
+}
+
+p{
+    color: black;
+    margin-bottom: 5px;
+}
+
+span {
+    color: #795e66;
+}
+
+input[type=text],
+input[type=number],
+input[type=submit],
+button,
+select {
+    text-align: center;
+    padding: 5px;
+    border: 0;
+    border-radius: 0;
+    background-color: #5990EA;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=number],
+input[type=submit],
+select {
+    width: 100%;
+}
+
+#backgroundPicker {
+    margin-bottom: 15px;
+}
+
+input[type=submit],
+button {
+    border: 1px solid blue;
+
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+input[type=submit]:hover,
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: #5990EA;
+}
+
+.paint-controls,
+.controls-list {
+    margin-top:20px;
+}
+
+.grid-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.grid-buttons button {
+    flex-grow: 1;
+    width: 50%;
+    margin-right: 5px;
+}
+
+.grid-buttons button:nth-child(2n) {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+input[type=color] {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+input[type=color]:hover {
+    cursor: pointer;
+}
+
+.canvas-wrapper {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top:35px;
+}
+
+table,
+tr,
+td {
+    border: 1px solid rgba(236, 30, 89, 0.2);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* table:hover {
+    cursor: defaul;
+} */
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+.canvasCol {
+    background-color: #1b1014;
+}
+
+.toggleGrid {
+    border: none;
+}
+
+.eyedropper {
+    cursor: crosshair;
+}

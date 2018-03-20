@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Lab: Pixel Art Maker</h1>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="controls-wrapper">
+            <form id="sizePicker">
+                <div class="grid-controls">
+                    <h2>CREATE GRID CANVAS</h2>
+                    <p>GRID HEIGHT:</p>
+                    <input type="number" id="input_height" name="height" min="1" value="32"> <br />
+                    <p>GRID WIDTH:</p>
+                    <input type="number" id="input_width" name="width" min="1" value="32"><br />
+                    <p>SET BACKGROUND COLOR:</p>
+                    <input type="color" id="backgroundPicker">
+                    <input id="submitGrid" type="submit" value="INITIALIZE GRID">
+                </div>
+
+                <div class="paint-controls">
+                    <h2>PAINT CONTROLS</h2>
+                    <p>BRUSH SIZE:</p>
+                    <select id="brush_Size">
+                        <option class="brush-size" value="1">1</option>
+                        <option class="brush-size" value="2">2</option>
+                        <option class="brush-size" value="3">3</option>
+                    </select>
+                    <div class="grid-buttons">
+                        <button id="toggleGrid" type="button">TOGGLE GRID</button>
+                        <button id="reset" type="button">CLEAR CANVAS</button>
+                    </div>
+                    <p>COLOR PICKER:</p>
+                    <input type="color" id="colorPicker">
+                </div>
+            </form>
+        </div>
+
+        <div class="canvas-wrapper">
+            <table id="pixel_canvas" oncontextmenu="return false;"></table>
+        </div>
+    </div>
+    <!--
+    // JavaScript
+    -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/designs.js"></script>
+</body>
+</html>
